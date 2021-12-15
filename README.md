@@ -10,14 +10,14 @@ This repository contains JavaScript based examples that will teach you the funda
 
 All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures).
 
-## Table of contents
+## Table of Contents
 
-- [Basic Algorithm Scripting](#basic-algorithm-scriptting)
-  - [Convert Celsius to FahrenheitPassed](#convert-celsius-to-fahrenheitPassed)
+- [Basic Algorithm Scripting](#basic-algorithm-scripting)
+  - [1. Convert Celsius to Fahrenheit](#1-convert-celsius-to-fahrenheit)
 
 ## Basic Algorithm Scripting
 
-### 1. Convert Celsius to FahrenheitPassed
+### 1. Convert Celsius to Fahrenheit
 
 ### Difficulty: Beginner
 
