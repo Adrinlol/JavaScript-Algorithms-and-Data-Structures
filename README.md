@@ -1,12 +1,10 @@
 ## JavaScript Algorithms and Data Structures
 
-This repository contains JavaScript based examples of many popular algorithms and data structures.
-
 An algorithm is a series of step-by-step instructions that describe how to do something.
 
 To write an effective algorithm, it helps to break a problem down into smaller parts and think carefully about how to solve each part with code.
 
-This repository contains JavaScript based examples that will teach you the fundamentals of algorithmic thinking by writing algorithms that do everything from converting temperatures to handling complex 2D arrays.
+This repository contains JavaScript based examples that will teach you the fundamentals of algorithmic thinking by writing functions that do everything from converting temperatures to handling complex 2D arrays.
 
 All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures).
 
