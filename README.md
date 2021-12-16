@@ -12,6 +12,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
 
 - [Basic Algorithm Scripting](#basic-algorithm-scripting)
   - [1. Convert Celsius to Fahrenheit](#1-convert-celsius-to-fahrenheit)
+  - [2. Reverse a String](#2-reverse-a-tring)
 
 ## Basic Algorithm Scripting
 
@@ -34,4 +35,41 @@ function convertToF(celsius) {
 }
 
 convertToF(30);
+```
+
+### 2. Reverse a String
+
+### Difficulty: Beginner
+
+Reverse the provided string.
+
+You may need to turn the string into an array before you can reverse it.
+
+Your result must be a string.
+
+---
+
+### Solution 1
+
+```
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+reverseString("hello");
+```
+
+### Solution 2
+
+```
+function reverseString(str) {
+  let reversedString = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedString += str[i];
+  }
+  return reversedString;
+}
+
+reverseString("hello");
+
 ```
