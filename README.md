@@ -12,7 +12,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
 
 - [Basic Algorithm Scripting](#basic-algorithm-scripting)
   - [1. Convert Celsius to Fahrenheit](#1-convert-celsius-to-fahrenheit)
-  - [2. Reverse a String](#2-reverse-a-tring)
+  - [2. Reverse a String](#2-reverse-a-string)
 
 ## Basic Algorithm Scripting
 
