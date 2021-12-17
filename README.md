@@ -13,6 +13,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
 - [Basic Algorithm Scripting](#basic-algorithm-scripting)
   - [1. Convert Celsius to Fahrenheit](#1-convert-celsius-to-fahrenheit)
   - [2. Reverse a String](#2-reverse-a-string)
+  - [3. Factorialize a Number](#3-factorialize-a-number)
 
 ## Basic Algorithm Scripting
 
@@ -71,5 +72,50 @@ function reverseString(str) {
 }
 
 reverseString("hello");
+
+```
+
+### 3. Factorialize a Number
+
+### Difficulty: Beginner
+
+Return the factorial of the provided integer.
+
+If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
+
+Factorials are often represented with the shorthand notation n!
+
+For example: 5! = 1 _ 2 _ 3 _ 4 _ 5 = 120
+
+Only integers greater than or equal to zero will be supplied to the function.
+
+---
+
+### Solution 1
+
+```
+function factorialize(num) {
+  if (num === 0) {
+    return 1;
+  } else return num * factorialize(num - 1);
+}
+
+factorialize(5);
+
+```
+
+### Solution 2
+
+```
+function factorialize(num) {
+  let factorializedNumber = 1;
+  for (let i = 2; i <= num; i++) {
+    factorializedNumber *= i;
+  }
+  return factorializedNumber;
+}
+
+factorialize(5);
+
 
 ```
