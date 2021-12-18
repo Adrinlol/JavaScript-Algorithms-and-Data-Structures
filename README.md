@@ -30,7 +30,7 @@ You are given a variable celsius representing a temperature in Celsius. Use the 
 
 ### Solution
 
-```
+```js
 function convertToF(celsius) {
   let fahrenheit = (celsius * 9) / 5 + 32;
   return fahrenheit;
@@ -53,7 +53,7 @@ Your result must be a string.
 
 ### Solution 1
 
-```
+```js
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
@@ -63,7 +63,7 @@ reverseString("hello");
 
 ### Solution 2
 
-```
+```js
 function reverseString(str) {
   let reversedString = "";
   for (let i = str.length - 1; i >= 0; i--) {
@@ -73,7 +73,6 @@ function reverseString(str) {
 }
 
 reverseString("hello");
-
 ```
 
 ### 3. Factorialize a Number
@@ -94,7 +93,7 @@ Only integers greater than or equal to zero will be supplied to the function.
 
 ### Solution 1
 
-```
+```js
 function factorialize(num) {
   if (num === 0) {
     return 1;
@@ -102,12 +101,11 @@ function factorialize(num) {
 }
 
 factorialize(5);
-
 ```
 
 ### Solution 2
 
-```
+```js
 function factorialize(num) {
   let factorializedNumber = 1;
   for (let i = 2; i <= num; i++) {
@@ -117,8 +115,6 @@ function factorialize(num) {
 }
 
 factorialize(5);
-
-
 ```
 
 ### 4. Find the Longest Word in a String
@@ -131,9 +127,9 @@ Your response should be a number.
 
 ---
 
-### Solution 1
+### Solution
 
-```
+```js
 function findLongestWordLength(str) {
   let splitWords = str.split(" ");
   let longestWordLength = 0;
@@ -147,5 +143,4 @@ function findLongestWordLength(str) {
 }
 
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
-
 ```
