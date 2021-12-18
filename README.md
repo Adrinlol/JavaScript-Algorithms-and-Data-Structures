@@ -14,6 +14,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [1. Convert Celsius to Fahrenheit](#1-convert-celsius-to-fahrenheit)
   - [2. Reverse a String](#2-reverse-a-string)
   - [3. Factorialize a Number](#3-factorialize-a-number)
+  - [4. Find the Longest Word in a String](#4-find-the-longest-word-in-a-string)
 
 ## Basic Algorithm Scripting
 
@@ -117,5 +118,34 @@ function factorialize(num) {
 
 factorialize(5);
 
+
+```
+
+### 4. Find the Longest Word in a String
+
+### Difficulty: Beginner
+
+Return the length of the longest word in the provided sentence.
+
+Your response should be a number.
+
+---
+
+### Solution 1
+
+```
+function findLongestWordLength(str) {
+  let splitWords = str.split(" ");
+  let longestWordLength = 0;
+
+  for (let i = 0; i < splitWords.length; i++) {
+    if (splitWords[i].length > longestWordLength) {
+      longestWordLength = splitWords[i].length;
+    }
+  }
+  return longestWordLength;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
 ```
