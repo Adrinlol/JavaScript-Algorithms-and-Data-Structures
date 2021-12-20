@@ -18,6 +18,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [5. Return Largest Numbers in Arrays Passed](#5-return-largest-numbers-in-arrays-passed)
   - [6. Confirm the Ending Passed](#6-confirm-the-ending-passed)
   - [7. Repeat a String Repeat a String](#7-repeat-a-string-repeat-a-string)
+  - [8. Truncate a String](#8-truncate-a-string)
 
 ## Basic Algorithm Scripting
 
@@ -260,4 +261,26 @@ function repeatStringNumTimes(str, num) {
     return str + repeatStringNumTimes(str, num - 1);
   }
 }
+```
+
+### 8. Truncate a String
+
+_Difficulty: Beginner_
+
+Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ... ending.
+
+---
+
+#### Solution
+
+```js
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
 ```
