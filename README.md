@@ -15,6 +15,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [2. Reverse a String](#2-reverse-a-string)
   - [3. Factorialize a Number](#3-factorialize-a-number)
   - [4. Find the Longest Word in a String](#4-find-the-longest-word-in-a-string)
+  - [5. Return Largest Numbers in Arrays Passed](#5-return-largest-numbers-in-arrays-passed)
 
 ## Basic Algorithm Scripting
 
@@ -143,4 +144,60 @@ function findLongestWordLength(str) {
 }
 
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
+```
+
+### 5. Return Largest Numbers in Arrays Passed
+
+### Difficulty: Beginner
+
+Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
+
+## Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
+
+### Solution 1
+
+```js
+function largestOfFour(arr) {
+  let results = [];
+  for (let i = 0; i < arr.length; i++) {
+    let largestNumber = arr[i][0];
+    for (let j = 1; j < arr[i].length; j++) {
+      if (arr[i][j] > largestNumber) {
+        largestNumber = arr[i][j];
+      }
+    }
+    results[i] = largestNumber;
+  }
+  return results;
+}
+
+largestOfFour([
+  [4, 5, 1, 3],
+  [13, 27, 18, 26],
+  [32, 35, 37, 39],
+  [1000, 1001, 857, 1],
+]);
+```
+
+### Solution 2
+
+```js
+function largestOfFour(arr) {
+  let results = [];
+  arr.forEach((element) => {
+    let largestNumber = element[0];
+    element.forEach((item) => {
+      item > largestNumber && (largestNumber = item);
+    });
+    results.push(largestNumber);
+  });
+  return results;
+}
+
+largestOfFour([
+  [4, 5, 1, 3],
+  [13, 27, 18, 26],
+  [32, 35, 37, 39],
+  [1000, 1001, 857, 1],
+]);
 ```
