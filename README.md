@@ -224,7 +224,7 @@ function confirmEnding(str, target) {
 confirmEnding("Bastian", "n");
 ```
 
-### 7. Repeat a String Repeat a String
+### 7. Repeat a String
 
 _Difficulty: Beginner_
 
