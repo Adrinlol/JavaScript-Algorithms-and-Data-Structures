@@ -16,6 +16,8 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [3. Factorialize a Number](#3-factorialize-a-number)
   - [4. Find the Longest Word in a String](#4-find-the-longest-word-in-a-string)
   - [5. Return Largest Numbers in Arrays Passed](#5-return-largest-numbers-in-arrays-passed)
+  - [6. Confirm the Ending Passed](#6-confirm-the-ending-passed)
+  - [7. Repeat a String Repeat a String](#7-repeat-a-string-repeat-a-string)
 
 ## Basic Algorithm Scripting
 
@@ -200,4 +202,63 @@ largestOfFour([
   [32, 35, 37, 39],
   [1000, 1001, 857, 1],
 ]);
+```
+
+### 6. Confirm the Ending Passed
+
+_Difficulty: Beginner_
+
+Check if a string (first argument, str) ends with the given target string (second argument, target).
+
+This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
+
+---
+
+#### Solution
+
+```js
+function confirmEnding(str, target) {
+  return target === str.substr(-target.length);
+}
+
+confirmEnding("Bastian", "n");
+```
+
+### 7. Repeat a String Repeat a String
+
+_Difficulty: Beginner_
+
+Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number. For the purpose of this challenge, do not use the built-in .repeat() method.
+
+---
+
+#### Solution 1
+
+```js
+function repeatStringNumTimes(str, num) {
+  if (num < 1) {
+    return "";
+  } else {
+    let string = str;
+    for (let i = 1; i < num; i++) {
+      string += str;
+    }
+    console.log("string", string);
+    return string;
+  }
+}
+
+repeatStringNumTimes("abc", 3);
+```
+
+#### Solution 2
+
+```js
+function repeatStringNumTimes(str, num) {
+  if (num < 1) {
+    return "";
+  } else {
+    return str + repeatStringNumTimes(str, num - 1);
+  }
+}
 ```
