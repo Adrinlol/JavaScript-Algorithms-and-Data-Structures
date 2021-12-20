@@ -29,7 +29,7 @@ You are given a variable celsius representing a temperature in Celsius. Use the 
 
 ---
 
-### Solution
+#### Solution
 
 ```js
 function convertToF(celsius) {
@@ -52,7 +52,7 @@ Your result must be a string.
 
 ---
 
-### Solution 1
+#### Solution 1
 
 ```js
 function reverseString(str) {
@@ -62,7 +62,7 @@ function reverseString(str) {
 reverseString("hello");
 ```
 
-### Solution 2
+#### Solution 2
 
 ```js
 function reverseString(str) {
@@ -92,7 +92,7 @@ Only integers greater than or equal to zero will be supplied to the function.
 
 ---
 
-### Solution 1
+#### Solution 1
 
 ```js
 function factorialize(num) {
@@ -104,7 +104,7 @@ function factorialize(num) {
 factorialize(5);
 ```
 
-### Solution 2
+#### Solution 2
 
 ```js
 function factorialize(num) {
@@ -128,7 +128,7 @@ Your response should be a number.
 
 ---
 
-### Solution
+#### Solution
 
 ```js
 function findLongestWordLength(str) {
@@ -154,7 +154,7 @@ Return an array consisting of the largest number from each provided sub-array. F
 
 Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
 
-### Solution 1
+#### Solution 1
 
 ```js
 function largestOfFour(arr) {
@@ -179,7 +179,7 @@ largestOfFour([
 ]);
 ```
 
-### Solution 2
+#### Solution 2
 
 ```js
 function largestOfFour(arr) {
