@@ -21,7 +21,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
 
 ### 1. Convert Celsius to Fahrenheit
 
-### Difficulty: Beginner
+_Difficulty: Beginner_
 
 The algorithm to convert from Celsius to Fahrenheit is the temperature in Celsius times 9/5, plus 32.
 
@@ -42,7 +42,7 @@ convertToF(30);
 
 ### 2. Reverse a String
 
-### Difficulty: Beginner
+_Difficulty: Beginner_
 
 Reverse the provided string.
 
@@ -78,7 +78,7 @@ reverseString("hello");
 
 ### 3. Factorialize a Number
 
-### Difficulty: Beginner
+_Difficulty: Beginner_
 
 Return the factorial of the provided integer.
 
@@ -120,7 +120,7 @@ factorialize(5);
 
 ### 4. Find the Longest Word in a String
 
-### Difficulty: Beginner
+_Difficulty: Beginner_
 
 Return the length of the longest word in the provided sentence.
 
@@ -148,11 +148,11 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
 ### 5. Return Largest Numbers in Arrays Passed
 
-### Difficulty: Beginner
+_Difficulty: Beginner_
 
 Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
 
-## Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
+Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
 
 ### Solution 1
 
