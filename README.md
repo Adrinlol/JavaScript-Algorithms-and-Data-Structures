@@ -243,7 +243,6 @@ function repeatStringNumTimes(str, num) {
     for (let i = 1; i < num; i++) {
       string += str;
     }
-    console.log("string", string);
     return string;
   }
 }
