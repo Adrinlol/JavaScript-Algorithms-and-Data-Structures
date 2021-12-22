@@ -19,6 +19,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [6. Confirm the Ending Passed](#6-confirm-the-ending-passed)
   - [7. Repeat a String Repeat a String](#7-repeat-a-string-repeat-a-string)
   - [8. Truncate a String](#8-truncate-a-string)
+  - [9. Finders Keepers](#9-finders-keepers)
 
 ## Basic Algorithm Scripting
 
@@ -283,4 +284,37 @@ function truncateString(str, num) {
 }
 
 truncateString("A-tisket a-tasket A green and yellow basket", 8);
+```
+
+### 9. Finders Keepers
+
+_Difficulty: Beginner_
+
+Create a function that looks through an array arr and returns the first element in it that passes a 'truth test'. This means that given an element x, the 'truth test' is passed if func(x) is true. If no element passes the test, return undefined.
+
+---
+
+#### Solution 1
+
+```js
+function findElement(arr, func) {
+  let num = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    num = arr[i];
+    if (func(num)) {
+      return num;
+    }
+  }
+
+  return undefined;
+}
+```
+
+#### Solution 2
+
+```js
+function findElement(arr, func) {
+  return arr.find(func);
+}
 ```
