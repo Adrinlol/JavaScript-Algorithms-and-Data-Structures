@@ -20,6 +20,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [7. Repeat a String Repeat a String](#7-repeat-a-string-repeat-a-string)
   - [8. Truncate a String](#8-truncate-a-string)
   - [9. Finders Keepers](#9-finders-keepers)
+  - [10. Boo who](#10-boo-who)
 
 ## Basic Algorithm Scripting
 
@@ -321,4 +322,24 @@ function findElement(arr, func) {
 }
 
 findElement([1, 2, 3, 4], (num) => num % 2 === 0);
+```
+
+### 10. Boo who
+
+_Difficulty: Beginner_
+
+Check if a value is classified as a boolean primitive. Return true or false.
+
+Boolean primitives are true and false.
+
+---
+
+#### Solution 1
+
+```js
+function booWho(bool) {
+  return typeof bool === "boolean";
+}
+
+booWho(null);
 ```
