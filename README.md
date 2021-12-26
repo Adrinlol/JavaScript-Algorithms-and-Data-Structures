@@ -21,6 +21,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [8. Truncate a String](#8-truncate-a-string)
   - [9. Finders Keepers](#9-finders-keepers)
   - [10. Boo who](#10-boo-who)
+  - [11. Title Case a Sentence](#11-title-case-a-sentence)
 
 ## Basic Algorithm Scripting
 
@@ -342,4 +343,45 @@ function booWho(bool) {
 }
 
 booWho(null);
+```
+
+### 11. Title Case a Sentence
+
+_Difficulty: Beginner_
+
+Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+
+For the purpose of this exercise, you should also capitalize connecting words like the and of.
+
+---
+
+#### Solution 1
+
+```js
+function titleCase(str) {
+  let convertToArray = str.toLowerCase().split(" ");
+
+  for (let i = 0; i < convertToArray.length; i++) {
+    convertToArray[i] =
+      convertToArray[i].charAt(0).toUpperCase() + convertToArray[i].slice(1);
+  }
+  return convertToArray.join(" ");
+}
+
+titleCase("I'm a little tea pot");
+```
+
+#### Solution 2
+
+```js
+function titleCase(str) {
+  let convertToArray = str.toLowerCase().split(" ");
+  return convertToArray
+    .map((item) => {
+      return item.replace(item.charAt(0), item.charAt(0).toUpperCase());
+    })
+    .join(" ");
+}
+
+titleCase("I'm a little tea pot");
 ```
