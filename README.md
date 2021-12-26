@@ -22,6 +22,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [9. Finders Keepers](#9-finders-keepers)
   - [10. Boo who](#10-boo-who)
   - [11. Title Case a Sentence](#11-title-case-a-sentence)
+  - [12. Slice and Splice](#12-slice-and-splice)
 
 ## Basic Algorithm Scripting
 
@@ -384,4 +385,30 @@ function titleCase(str) {
 }
 
 titleCase("I'm a little tea pot");
+```
+
+### 12. Slice and Splice
+
+_Difficulty: Beginner_
+
+You are given two arrays and an index.
+
+Copy each element of the first array into the second array, in order.
+
+Begin inserting elements at index n of the second array.
+
+Return the resulting array. The input arrays should remain the same after the function runs.
+
+---
+
+#### Solution
+
+```js
+function frankenSplice(arr1, arr2, n) {
+  let localArr = [...arr2];
+  localArr.splice(n, 0, ...arr1);
+  return localArr;
+}
+
+frankenSplice([1, 2, 3], [4, 5], 1);
 ```
