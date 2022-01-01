@@ -23,6 +23,7 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [10. Boo who](#10-boo-who)
   - [11. Title Case a Sentence](#11-title-case-a-sentence)
   - [12. Slice and Splice](#12-slice-and-splice)
+  - [13. Falsy Bouncer](#13-falsy-bouncer)
 
 ## Basic Algorithm Scripting
 
@@ -411,4 +412,40 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 frankenSplice([1, 2, 3], [4, 5], 1);
+```
+
+### 13. Falsy Bouncer
+
+_Difficulty: Beginner_
+
+Remove all falsy values from an array.
+
+Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
+
+Hint: Try converting each value to a Boolean.
+
+---
+
+#### Solution 1
+
+```js
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
+
+bouncer([7, "ate", "", false, 9]);
+```
+
+#### Solution 2
+
+```js
+function bouncer(arr) {
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] && newArray.push(arr[i]);
+  }
+  return newArray;
+}
+
+bouncer([7, "ate", "", false, 9]);
 ```
