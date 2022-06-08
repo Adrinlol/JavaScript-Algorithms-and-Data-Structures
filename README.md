@@ -24,6 +24,8 @@ All of these examples are from FreeCodeCamp's [course](https://www.freecodecamp.
   - [11. Title Case a Sentence](#11-title-case-a-sentence)
   - [12. Slice and Splice](#12-slice-and-splice)
   - [13. Falsy Bouncer](#13-falsy-bouncer)
+  - [14. Where do I Belong](#14-where-do-i-belong)
+  - [15. Mutations](#15-mutations)
 
 ## Basic Algorithm Scripting
 
